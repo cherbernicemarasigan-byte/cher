@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4edeb;
+}
+  
+.container {
+    width: 100%;
+    max-width: 425px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px #c8d7d1;
+    text-align: left;
+    border-radius: 30px;
+}
+  
+h1 {
+    font-size: 2rem;
+    text-align: center;       
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.teddybear {
+  position: absolute;
+  top: 148px;                   
+  width: 66px;            
+  height: auto;
+  left: 890px;
+  transform: rotate(10deg); 
+}
+  
+.subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+  
+.input-group {
+    margin-bottom: 1rem;
+}
+  
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    display: block;
+    color: #333;
+}
+  
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #333;
+}
+  
+input:focus {
+    outline: none;
+    border-color: #000;
+}
+  
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.options input {
+    margin-right: 0.4rem;
+}
+
+.forgot-password {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 16.5rem;
+}
+  
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #274236;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 30px;
+}
+  
+.log-in-btn {
+    background-color: #806048;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+}
+  
+.log-in-btn:hover {
+    background-color: #c4c4c4;
+}
+  
+.sign-in-btn {
+    background-color: #806048;
+    color: #fff;
+    order: none;
+    margin-bottom: 1rem;
+}
+    
+.sign-in-btn:hover {
+    background-color: #c4c4c4;
+}
+
+.sign-up-btn {
+    background-color: #806048;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+}
+    
+.sign-up-btn:hover {
+    background-color: #c4c4c4;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}

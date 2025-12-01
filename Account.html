@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> My Account </title>
+  <link rel="stylesheet" href="Account.css">
+    <script src="Account.js"></script>
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="login-box">
+      <h1> Beary Nice Notes </h1>
+      <img src="sticker.png" class="teddybear" alt="Teddy Bear">
+      <p class="subtitle"> Please enter your details. </p>
+    
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email"> Email </label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password"> Password </label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Enter password" required>
+            <span id="togglePassword" class="toggle-password">👁</span>
+          </div>
+        </div>
+
+        <div class="options">
+          <a href="#" class="forgot-password"> Forgot password? </a>
+        </div>
+
+        <button type="submit" class="log-in-btn">Log in</button>
+        <button type="submit" class="sign-up-btn"> Sign up</button>
+      </form>
+
+
+    </div>
+
+  </div>
+
+  
+</body>
+</html>

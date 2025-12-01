@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planner</title>
+    <link rel="stylesheet" href="planner.css" />
+    <script src="Planner.js"></script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="title">
+  Beary Nice Notes
+  <img src="sticker.png" class="teddybear" alt="Teddy Bear">
+    </div>
+       
+        <div class="header">
+    <div class="profile-section">
+        <div id="avatar" class="avatar">A</div>
+        <div id="profileText" class="profile-text">Good day, Student!</div>
+    </div>
+    <button id="openSettings" class="settings-btn"> ⚙ </button>
+</div>
+
+        <div class="main-grid">
+
+            <!-- Left part (TO DO LIST & NOTES)-->
+            <div class="left-column">
+
+                <!-- TO DO LIST -->
+                <div class="card tasks-card">
+                    <div class="card-header">
+                        
+                        <span class="card-title"> To Do List: </span>
+                    </div>
+
+                    <div id="tasksList" class="tasks-list"></div>
+
+                    <form id="addTaskForm" class="add-task-form">
+                        <input
+                            type="text"
+                            id="taskInput"
+                            class="task-input"
+                            placeholder="Add a new task..."
+                        />
+                        <button type="submit" class="add-btn">Add</button>
+                    </form>
+                </div>
+
+                <!-- NOTES -->
+                <div class="card notes-card">
+                    <div class="card-header">
+                        <span class="card-title">Notes</span>
+                    </div>
+
+                    <textarea
+                        id="notesInput"
+                        class="notes-textarea"
+                        placeholder="Write your notes here..."
+                    ></textarea>
+                </div>
+
+            </div>
+
+
+            
+            <!-- Right Part (CLOCK & CALENDAR)-->
+            <div class="right-column">
+
+                <!-- CLOCK -->
+                <div class="card clock-card">
+                    <div class="card-header">
+                    </div>
+
+                    <div class="clock-content">
+                        <div id="clockTime" class="time"></div>
+                        <div id="clockDate" class="date"></div>
+                    </div>
+                </div>
+
+                <!-- CALENDAR -->
+                <div class="card calendar-card">
+                    <div class="card-header">
+                        
+                        <span class="card-title">Calendar</span>
+                    </div>
+
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button id="prevMonth" class="calendar-nav">◀</button>
+                            <div id="calendarMonth" class="calendar-month"></div>
+                            <button id="nextMonth" class="calendar-nav">▶</button>
+                        </div>
+
+                        
+
+                        <div id="calendarDays" class="calendar-grid"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            Reminder: Panindigan mo lahat ng nilagay mo beh. Tapusin mo lahat 'yan.
+        </div>
+
+
+    <div id="modalOverlay" class="modal-overlay"></div>
+
+    <!-- MODAL -->
+<div id="settingsModal" class="modal-box">
+    <div class="modal-header">
+        <h2>Settings</h2>
+        <span id="closeModal" class="close-btn"> ✕ </span>
+    </div>
+
+    <div class="modal-content">
+
+        <a href="Account.html?from=planner" class="modal-link">Account</a>
+
+        <div class="modal-section">
+            <label>Theme</label>
+           <select id="themeSelect">
+    <option value="light">Light Mode</option>
+    <option value="dark">Dark Mode</option>
+</select>
+
+        </div>
+
+        <div class="modal-section">
+            <label>Font Style</label>
+            <select id="fontSelect">
+    <option value="Poppins">Poppins</option>
+    <option value="Arial">Arial</option>
+    <option value="Verdana">Verdana</option>
+</select>
+
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">Log Out</button>
+
+
+    </div>
+</div>
+
+
+</body>
+</html>
